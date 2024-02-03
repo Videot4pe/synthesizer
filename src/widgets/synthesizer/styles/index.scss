@@ -1,0 +1,14 @@
+.synthesizer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin: 5em auto;
+  position: relative;
+  border: 1px solid #160801;
+  border-radius: 1em;
+  // background: linear-gradient(to bottom right,rgba(0,0,0,0.3),rgba(0,0,0,0)),url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/187/vwood.png);
+  // box-shadow: 0 0 50px rgba(0,0,0,0.5) inset,0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5)
+  background: rgb(53,53,67);
+  background: linear-gradient(90deg, rgba(53,53,67,1) 0%, rgba(140,58,102,1) 24%, rgba(186,33,136,1) 45%, rgba(212,69,69,1) 100%);
+}

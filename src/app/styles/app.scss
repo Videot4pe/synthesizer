@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text-primary: rgba(21, 21, 22, 1);
+    --color-text-secondary: rgba(247, 245, 242, 1);
+
+    --color-bg-primary: rgba(247, 245, 242, 1);
+    --color-bg-secondary: rgba(255, 63, 247, 1);
+  }
+
+  /* dark theme */
+  :root.dark {
+    --color-text-primary: rgba(21, 21, 22, 1);
+    --color-text-secondary: rgba(247, 245, 242, 1);
+
+    --color-bg-primary: rgba(247, 245, 242, 1);
+    --color-bg-secondary: rgba(255, 63, 247, 1);
+  }
+}
