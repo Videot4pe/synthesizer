@@ -1,6 +1,7 @@
 import Key from '#/features/key/ui';
 import "../styles/index.scss"
 import {generateNotesArray} from "#/shared/utils/generateNotes";
+import {For} from "solid-js";
 
 type KeyboardProps = {
   className?: string;
@@ -12,7 +13,9 @@ const Keyboard = (props: KeyboardProps) => {
   
   return (
     <ul class={`keyboard ${props.className}`}>
-      { keys.map(key => <Key {...key} />) }
+      <For each={keys}>
+        {(key) => <Key {...key} />}
+      </For>
     </ul>
   );
 }

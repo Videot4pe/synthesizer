@@ -1,43 +1,38 @@
 import { createEvent, createStore, combine } from 'effector';
 import {audioController} from "#/shared/lib/audio-controller/audio-controller";
 import {persist} from "effector-storage/local";
+import {synthesizerEngine} from "#/shared/lib/synthesizer-engine";
 
-// Создаем события для управления реверберацией
-export const setReverbLevel = createEvent<number>();
-export const setDryLevel = createEvent<number>();
-export const setWetLevel = createEvent<number>();
-export const setDelayTime = createEvent<number>();
-export const setDecayTime = createEvent<number>();
+export const setWet = createEvent<number>();
+export const setPreDelay = createEvent<number>();
+export const setDecay = createEvent<number>();
+export const setRoomSize = createEvent<number>();
 
-// Создаем отдельные сторы для каждого параметра
-const $reverbLevel = createStore<number>(0.5);
-const $dryLevel = createStore<number>(0.7);
-const $wetLevel = createStore<number>(0.3);
-const $delayTime = createStore<number>(0.6);
-const $decayTime = createStore<number>(2);
+const $wet = createStore<number>(0.3);
+const $preDelay = createStore<number>(0.6);
+const $decay = createStore<number>(2);
+const $roomSize = createStore<number>(0.7);
 
-// Связываем события с соответствующими сторами
-$reverbLevel.on(setReverbLevel, (_, level) => level);
-$dryLevel.on(setDryLevel, (_, level) => level);
-$wetLevel.on(setWetLevel, (_, level) => level);
-$delayTime.on(setDelayTime, (_, time) => time);
-$decayTime.on(setDecayTime, (_, time) => time);
+$wet.on(setWet, (_, level) => level);
+$preDelay.on(setPreDelay, (_, time) => time);
+$decay.on(setDecay, (_, time) => time);
+$roomSize.on(setRoomSize, (_, size) => size);
 
-// Объединяем отдельные сторы в один общий стор
 export const $audioEffects = combine({
-  reverbLevel: $reverbLevel,
-  dryLevel: $dryLevel,
-  wetLevel: $wetLevel,
-  delayTime: $delayTime,
-  decayTime: $decayTime
+  wet: $wet,
+  preDelay: $preDelay,
+  decay: $decay,
+  roomSize: $roomSize
 });
 
 $audioEffects.watch((state) => {
-  // audioController.updateReverbSettings(state);
+  synthesizerEngine.setReverbParam('wet', state.wet)
+  synthesizerEngine.setReverbParam('preDelay', state.preDelay)
+  synthesizerEngine.setReverbParam('decay', state.decay)
+  synthesizerEngine.setReverbParam('roomSize', state.roomSize)
 });
 
-persist({ store: $reverbLevel, key: 'reverb-level' })
-persist({ store: $dryLevel, key: 'dry-level' })
-persist({ store: $wetLevel, key: 'wet-level' })
-persist({ store: $delayTime, key: 'delay-time' })
-persist({ store: $decayTime, key: 'decay-time' })
+persist({ store: $wet, key: 'wet' })
+persist({ store: $preDelay, key: 'pre-delay' })
+persist({ store: $decay, key: 'decay' })
+persist({ store: $roomSize, key: 'room-size' })

@@ -1,0 +1,3 @@
+export const PITCH_SHIFT_MIN_PITCH = -30
+export const PITCH_SHIFT_MAX_PITCH = 30
+export const PITCH_SHIFT_DEFAULT_PITCH = 0

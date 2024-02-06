@@ -1,0 +1,11 @@
+export const CHORUS_MIN_FREQUENCY = 0
+export const CHORUS_MAX_FREQUENCY = 10000
+export const CHORUS_DEFAULT_FREQUENCY = 1000
+
+export const CHORUS_MIN_DELAY_TIME = 0
+export const CHORUS_MAX_DELAY_TIME = 5
+export const CHORUS_DEFAULT_DELAY_TIME = 1
+
+export const CHORUS_MIN_DEPTH = 0.1
+export const CHORUS_MAX_DEPTH = 1
+export const CHORUS_DEFAULT_DEPTH = 0.5

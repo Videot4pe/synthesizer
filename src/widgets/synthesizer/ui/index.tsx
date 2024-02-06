@@ -5,7 +5,7 @@ import SoundDisplay from "#/entities/sound-display/ui";
 
 const Synthesizer = () => {
   return (
-    <div class="synthesizer w-full">
+    <div class="synthesizer bg-red-600 hover:bg-red-700 text-white font-bold rounded focus:outline-none focus:shadow-outline w-full">
       <div class="p-8 space-y-4">
         <div class="text-center text-text-secondary">Synthesizer</div>
         <hr />

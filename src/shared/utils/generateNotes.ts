@@ -3,18 +3,18 @@ import {Note, NoteType} from "#/shared/model/note";
 export const generateNotesArray = (startOctave: number, endOctave: number): Note[] => {
   const noteNames = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
   const notesWithKeys = [
-    { note: 'C', key: 'KeyZ' },
-    { note: 'C#', key: 'KeyS' },
-    { note: 'D', key: 'KeyX' },
-    { note: 'D#', key: 'KeyD' },
-    { note: 'E', key: 'KeyC' },
-    { note: 'F', key: 'KeyV' },
-    { note: 'F#', key: 'KeyG' },
-    { note: 'G', key: 'KeyB' },
-    { note: 'G#', key: 'KeyH' },
-    { note: 'A', key: 'KeyN' },
-    { note: 'A#', key: 'KeyJ' },
-    { note: 'B', key: 'KeyM' }
+    { note: 'C', key: 'KeyA' },
+    { note: 'C#', key: 'KeyW' },
+    { note: 'D', key: 'KeyS' },
+    { note: 'D#', key: 'KeyE' },
+    { note: 'E', key: 'KeyD' },
+    { note: 'F', key: 'KeyF' },
+    { note: 'F#', key: 'KeyT' },
+    { note: 'G', key: 'KeyG' },
+    { note: 'G#', key: 'KeyY' },
+    { note: 'A', key: 'KeyH' },
+    { note: 'A#', key: 'KeyU' },
+    { note: 'B', key: 'KeyJ' }
   ];
   const notesArray: Note[] = [];
   const a4Index = 57; // Индекс A4 в полной последовательности нот (C0 = 0, ..., A4 = 57, ...)

@@ -1,4 +1,4 @@
-import {BANDS} from "#/shared/constants/equalizer";
+import {BANDS} from "#/features/equalizer/constants/equalizer";
 import {Equalizer} from "#/shared/lib/audio-controller/equalizer";
 import {Oscillator} from "#/shared/lib/audio-controller/oscillator";
 import {Gain} from "#/shared/lib/audio-controller/gain";

@@ -1,25 +1,27 @@
 import "../styles/index.scss"
 import {Note} from "#/shared/model/note";
-import {createEffect} from "solid-js";
+import {createEffect, createSignal} from "solid-js";
 import {synthesizerEngine} from "#/shared/lib/synthesizer-engine";
 
 type KeyProps = Note;
 
 const Key = (props: KeyProps) => {
   
+  const [keyIsPressed, setKeyIsPressed] = createSignal<number | undefined>();
+  
   const onStart = () => {
-    // audioController.setFrequency(props.frequency)
-    // audioController.play()
-    synthesizerEngine.triggerAttackRelease(props.frequency, '8n')
+    synthesizerEngine.triggerAttack(props.frequency)
   }
   const onEnd = () => {
-    // audioController.stop()
+    synthesizerEngine.triggerRelease(props.frequency)
   }
   
   const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.repeat || keyIsPressed() === props.frequency) return
+    
     const key = event.code;
-    console.log(event)
     if (key === props.key) {
+      setKeyIsPressed(props.frequency)
       onStart()
     }
   };
@@ -27,10 +29,12 @@ const Key = (props: KeyProps) => {
   const handleKeyUp = (event: KeyboardEvent) => {
     const key = event.code;
     if (key === props.key) {
+      setKeyIsPressed(undefined)
       onEnd()
     }
   };
   
+  // TODO -> mode to keyboard or common effector
   createEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
     window.addEventListener('keyup', handleKeyUp);

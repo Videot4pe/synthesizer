@@ -30,6 +30,7 @@
     "effector": "^23.1.0",
     "effector-solid": "^0.23.0",
     "effector-storage": "^7.0.0",
+    "flowbite": "^2.2.1",
     "http-status-codes": "^2.3.0",
     "immer": "^10.0.2",
     "lorem-ipsum": "^2.0.8",
@@ -37,6 +38,7 @@
     "solid-js": "^1.8.0",
     "solid-toast": "^0.5.0",
     "solid-zustand": "^1.7.1",
+    "tailwindcss-animated": "^1.0.1",
     "tone": "^14.7.77",
     "uuid": "^9.0.0",
     "zustand": "^4.5.0"
