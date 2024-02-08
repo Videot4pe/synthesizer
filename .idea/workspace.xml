@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93950152-47f1-4f9f-a2cf-d144a4ee11b7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/envelope/constants/envelope.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/envelope/constants/envelope.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/oscillator/model/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/oscillator/model/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/oscillator/ui/oscillator-type.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/oscillator/ui/oscillator-type.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/lib/synthesizer-engine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/lib/synthesizer-engine/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/MainLayout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/control-board/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/control-board/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/synthesizer/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/synthesizer/ui/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +54,11 @@
       <recent name="$PROJECT_DIR$/src/shared/utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/shared/ui/popup-widget" />
       <recent name="$PROJECT_DIR$/src/shared/ui/knob/constants" />
       <recent name="$PROJECT_DIR$/src/features/phaser/constants" />
       <recent name="$PROJECT_DIR$/src/features/tremolo/constants" />
-      <recent name="$PROJECT_DIR$/src/features/reverberation/constants" />
     </key>
   </component>
   <component name="RunManager" selected="npm.lint">
@@ -108,7 +103,7 @@
       <workItem from="1706557083651" duration="2641000" />
       <workItem from="1706688641312" duration="255000" />
       <workItem from="1706688911522" duration="16000" />
-      <workItem from="1706875981789" duration="72368000" />
+      <workItem from="1706875981789" duration="79017000" />
     </task>
     <servers />
   </component>
