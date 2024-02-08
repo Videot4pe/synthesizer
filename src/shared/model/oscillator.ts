@@ -1,5 +1,5 @@
-import * as Tone from "tone";
+import {ToneOscillatorType} from "tone";
 
 export type Oscillator = {
-  type: Tone.ToneOscillatorType
+  type: ToneOscillatorType
 }

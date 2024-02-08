@@ -1,7 +1,7 @@
 import {useUnit} from "effector-solid";
 import {$oscillator, setOscillatorType} from "#/features/oscillator/model/store";
 import Select from "#/shared/ui/select/ui";
-import Tone from "tone";
+import {ToneOscillatorType} from "tone";
 import {options} from "#/features/oscillator/constants";
 
 const TremoloDepth = () => {
@@ -12,7 +12,7 @@ const TremoloDepth = () => {
       label="Type"
       value={filter().oscillatorType}
       options={options}
-      onValueChange={value => setOscillatorType(value as Tone.ToneOscillatorType)}
+      onValueChange={value => setOscillatorType(value as ToneOscillatorType)}
     />
   );
 }

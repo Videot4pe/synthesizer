@@ -9,7 +9,7 @@ const Waveform = (props: SoundDisplayProps) => {
   let canvasRef: HTMLCanvasElement;
   let animationFrameId: number;
   
-  const draw = (analyser: Tone.Analyser, ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
+  const draw = (analyser: Analyser, ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
     const bufferLength = analyser.size;
     const dataArray = analyser.getValue() as Float32Array;
     

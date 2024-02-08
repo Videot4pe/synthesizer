@@ -1,42 +1,56 @@
-import * as Tone from 'tone';
 import {Envelope} from "#/shared/model/envelope";
-import {Oscillator} from "#/shared/model/oscillator";
+import {
+  Analyser, BitCrusher,
+  Chorus,
+  Delay,
+  Distortion,
+  EQ3,
+  FFT,
+  Oscillator,
+  PitchShift,
+  PolySynth,
+  Reverb,
+  Synth,
+  Tremolo,
+  ToneOscillatorType,
+  start,
+} from "tone";
 
 class SynthesizerEngine {
-  private readonly synthesizer: Tone.PolySynth<Tone.Synth>;
-  private readonly eq: Tone.EQ3;
-  private readonly osc: Tone.Oscillator;
+  private readonly synthesizer: PolySynth<Synth>;
+  private readonly eq: EQ3;
+  private readonly osc: Oscillator;
   
-  private readonly analyser: Tone.Analyser;
-  private readonly fft: Tone.FFT;
+  private readonly analyser: Analyser;
+  private readonly fft: FFT;
   
-  private readonly reverb: Tone.Reverb;
-  private readonly delay: Tone.Delay;
-  private readonly chorus: Tone.Chorus;
-  private readonly tremolo: Tone.Tremolo;
-  private readonly pitchShift: Tone.PitchShift;
-  private readonly distortion: Tone.Distortion;
-  private readonly crusher: Tone.BitCrusher;
+  private readonly reverb: Reverb;
+  private readonly delay: Delay;
+  private readonly chorus: Chorus;
+  private readonly tremolo: Tremolo;
+  private readonly pitchShift: PitchShift;
+  private readonly distortion: Distortion;
+  private readonly crusher: BitCrusher;
   
   constructor() {
     // TODO start values (?)
-    this.synthesizer = new Tone.PolySynth(Tone.Synth).toDestination();
+    this.synthesizer = new PolySynth(Synth).toDestination();
     
-    this.eq = new Tone.EQ3().toDestination();
-    this.osc = new Tone.Oscillator().toDestination();
+    this.eq = new EQ3().toDestination();
+    this.osc = new Oscillator().toDestination();
     
     console.log(this.osc.type)
     
-    this.reverb = new Tone.Reverb().toDestination();
-    this.delay = new Tone.Delay().toDestination();
-    this.chorus = new Tone.Chorus().toDestination();
-    this.tremolo = new Tone.Tremolo().toDestination().start();
-    this.pitchShift = new Tone.PitchShift().toDestination();
-    this.distortion = new Tone.Distortion().toDestination();
-    this.crusher = new Tone.BitCrusher().toDestination();
+    this.reverb = new Reverb().toDestination();
+    this.delay = new Delay().toDestination();
+    this.chorus = new Chorus().toDestination();
+    this.tremolo = new Tremolo().toDestination().start();
+    this.pitchShift = new PitchShift().toDestination();
+    this.distortion = new Distortion().toDestination();
+    this.crusher = new BitCrusher().toDestination();
     
-    this.analyser = new Tone.Analyser('waveform', 1024);
-    this.fft = new Tone.FFT(1024);
+    this.analyser = new Analyser('waveform', 1024);
+    this.fft = new FFT(1024);
     
     this.synthesizer.connect(this.analyser);
     this.synthesizer.connect(this.fft);
@@ -60,11 +74,11 @@ class SynthesizerEngine {
     return this.synthesizer.volume.value;
   }
   
-  getAnalyser(): Tone.Analyser {
+  getAnalyser(): Analyser {
     return this.analyser;
   }
   
-  getFft(): Tone.FFT {
+  getFft(): FFT {
     return this.fft;
   }
   
@@ -101,7 +115,7 @@ class SynthesizerEngine {
     this.synthesizer.set({ ...this.synthesizer.get(), envelope });
   }
   
-  async setOscillatorParam(type: Tone.ToneOscillatorType) {
+  async setOscillatorParam(type: ToneOscillatorType) {
     // this.synthesizer.set({ ...this.synthesizer.get(), oscillator: { ...this.osc.get(), type }});
     // @ts-ignore
     this.synthesizer.set({ oscillator: { ...this.synthesizer.get().oscillator, type }})
@@ -140,7 +154,7 @@ class SynthesizerEngine {
   }
   
   async start() {
-    return Tone.start()
+    return start()
   }
 }
 

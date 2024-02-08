@@ -1,11 +1,11 @@
 import { createEvent, createStore, combine } from 'effector';
 import { persist } from "effector-storage/local";
 import { synthesizerEngine } from "#/shared/lib/synthesizer-engine";
-import Tone from "tone";
+import {ToneOscillatorType} from "tone";
 
-export const setOscillatorType = createEvent<Tone.ToneOscillatorType>();
+export const setOscillatorType = createEvent<ToneOscillatorType>();
 
-const $oscillatorType = createStore<Tone.ToneOscillatorType>('sine');
+const $oscillatorType = createStore<ToneOscillatorType>('sine');
 
 $oscillatorType.on(setOscillatorType, (_, value) => value);
 

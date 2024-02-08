@@ -9,14 +9,15 @@ export const AppRouter = () => {
     <Router>
       <Route path="/login" component={LoginPage} />
       <Route path="/sign-up" component={SignupPage} />
-      <Route
-        path="/"
-        component={
-          <MainLayout>
-            <SynthesizerPage />
-          </MainLayout>
-        }
-      />
+      <Route path="/" component={SynthesizerPage} />
+      {/*<Route*/}
+      {/*  path="/"*/}
+      {/*  component={*/}
+      {/*    <MainLayout>*/}
+      {/*      <SynthesizerPage />*/}
+      {/*    </MainLayout>*/}
+      {/*  }*/}
+      {/*/>*/}
     </Router>
   )
 };

@@ -9,7 +9,7 @@ const Spectrogram = (props: SoundDisplayProps) => {
   let canvasRef: HTMLCanvasElement;
   let animationFrameId: number;
   
-  const draw = (fft: Tone.FFT, ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
+  const draw = (fft: FFT, ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement) => {
     const bufferLength = fft.size;
     const dataArray = fft.getValue() as Float32Array;
     const imageData = ctx.getImageData(1, 0, 800 - 1, 400);
