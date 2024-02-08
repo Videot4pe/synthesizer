@@ -14,7 +14,7 @@ export const $oscillator = combine({
 });
 
 $oscillator.watch((state) => {
-  synthesizerEngine.setOscillatorParam({ type: state.oscillatorType })
+  synthesizerEngine.setOscillatorParam(state.oscillatorType);
 });
 
 persist({ store: $oscillatorType, key: 'oscillator-type' })

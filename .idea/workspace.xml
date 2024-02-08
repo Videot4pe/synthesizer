@@ -5,59 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93950152-47f1-4f9f-a2cf-d144a4ee11b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/reverberation/constants/reverberation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/reverberation/ui/reverberation-wet.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/volume/model/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/volume/ui/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/equalizer-control/ui/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/widgets/reverberation-control/ui/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/sound-display/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/sound-display/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/equalizer/model/high.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/model/high.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/equalizer/model/low.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/model/low.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/equalizer/model/mid.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/model/mid.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/equalizer/ui/high-frequency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/ui/high-frequency.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/equalizer/ui/high-gain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/ui/high-gain.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/equalizer/ui/low-frequency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/ui/low-frequency.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/equalizer/ui/low-gain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/ui/low-gain.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/equalizer/ui/mid-frequency.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/ui/mid-frequency.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/equalizer/ui/mid-gain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/ui/mid-gain.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/key/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/key/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/reverberation/model/model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/reverberation/model/model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/reverberation/model/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/reverberation/model/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/reverberation/ui/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/volume-control/model/store.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/volume-control/ui/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/constants/equalizer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/equalizer/constants/equalizer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/constants/knob.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/knob/constants/knob.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/constants/notes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/constants/reverberation.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/constants/sort.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/lib/audio-controller/audio-controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/lib/audio-controller/audio-controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/lib/audio-engine.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/lib/create-immer-signal.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/lib/generate-random-text-list.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/lib/random.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/lib/sort/get-sorted-array-by-created-at.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/lib/sort/get-sorted-array-by-search-text.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/envelope/constants/envelope.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/envelope/constants/envelope.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/oscillator/model/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/oscillator/model/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/oscillator/ui/oscillator-type.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/oscillator/ui/oscillator-type.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/shared/lib/synthesizer-engine/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/lib/synthesizer-engine/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/model/equalizer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/model/equalizer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/knob/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/knob/styles/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/ui/knob/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/knob/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/utils/generateNotes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/utils/generateNotes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/control-board/styles/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/ui/MainLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/ui/MainLayout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/control-board/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/control-board/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/equalizer-board/styles/index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/equalizer-board/ui/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/keyboard/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/keyboard/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/reverberation-board/ui/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/widgets/synthesizer/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/synthesizer/styles/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/widgets/synthesizer/ui/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/widgets/synthesizer/ui/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +108,7 @@
       <workItem from="1706557083651" duration="2641000" />
       <workItem from="1706688641312" duration="255000" />
       <workItem from="1706688911522" duration="16000" />
-      <workItem from="1706875981789" duration="67000000" />
+      <workItem from="1706875981789" duration="72368000" />
     </task>
     <servers />
   </component>

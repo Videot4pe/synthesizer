@@ -7,6 +7,7 @@ import EnvelopeControl from "#/widgets/envelope-control/ui";
 import DistortionControl from "#/widgets/distortion-control/ui";
 import PitchShiftControl from "#/widgets/pitch-shift-control/ui";
 import CrusherControl from "#/widgets/crusher-control/ui";
+import OscillatorControl from "#/widgets/oscillator-control/ui";
 
 type ControlBoardProps = {}
 
@@ -22,6 +23,7 @@ const ControlBoard = (props: ControlBoardProps) => {
       <EnvelopeControl />
       <DistortionControl />
       <PitchShiftControl />
+      <OscillatorControl />
     </div>
   );
 }

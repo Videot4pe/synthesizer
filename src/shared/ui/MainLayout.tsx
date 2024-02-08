@@ -5,6 +5,7 @@ interface Props {
 }
 
 const MainLayout: (props: Props) => JSX.Element = (props) => {
+  
   return (
     <section class="flex justify-center">
       <div class="max-w-screen-lg w-full h-screen p-8 flex justify-center items-center">

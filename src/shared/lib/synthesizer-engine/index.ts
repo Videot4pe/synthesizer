@@ -25,6 +25,8 @@ class SynthesizerEngine {
     this.eq = new Tone.EQ3().toDestination();
     this.osc = new Tone.Oscillator().toDestination();
     
+    console.log(this.osc.type)
+    
     this.reverb = new Tone.Reverb().toDestination();
     this.delay = new Tone.Delay().toDestination();
     this.chorus = new Tone.Chorus().toDestination();
@@ -99,8 +101,10 @@ class SynthesizerEngine {
     this.synthesizer.set({ ...this.synthesizer.get(), envelope });
   }
   
-  async setOscillatorParam(oscillator: Oscillator) {
-    this.synthesizer.set({ ...this.synthesizer.get(), oscillator});
+  async setOscillatorParam(type: Tone.ToneOscillatorType) {
+    // this.synthesizer.set({ ...this.synthesizer.get(), oscillator: { ...this.osc.get(), type }});
+    // @ts-ignore
+    this.synthesizer.set({ oscillator: { ...this.synthesizer.get().oscillator, type }})
   }
   
   async setTremoloParam(param: 'frequency' | 'depth', value: any) {
@@ -133,6 +137,10 @@ class SynthesizerEngine {
   
   triggerRelease(note: string | number, duration?: string): void {
     this.synthesizer.triggerRelease(note, duration);
+  }
+  
+  async start() {
+    return Tone.start()
   }
 }
 

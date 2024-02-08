@@ -1,15 +1,15 @@
 export const ENVELOPE_MIN_ATTACK = 0.001
 export const ENVELOPE_MAX_ATTACK = 2
-export const ENVELOPE_DEFAULT_ATTACK = 0.1
+export const ENVELOPE_DEFAULT_ATTACK = 0.005
 
 export const ENVELOPE_MIN_DECAY = 0.01
 export const ENVELOPE_MAX_DECAY = 3
-export const ENVELOPE_DEFAULT_DECAY = 1
-
-export const ENVELOPE_MIN_RELEASE = 0.001
-export const ENVELOPE_MAX_RELEASE = 10
-export const ENVELOPE_DEFAULT_RELEASE = 0.5
+export const ENVELOPE_DEFAULT_DECAY = 0.1
 
 export const ENVELOPE_MIN_SUSTAIN = 0
 export const ENVELOPE_MAX_SUSTAIN = 1
-export const ENVELOPE_DEFAULT_SUSTAIN = .5
+export const ENVELOPE_DEFAULT_SUSTAIN = 0.3
+
+export const ENVELOPE_MIN_RELEASE = 0.001
+export const ENVELOPE_MAX_RELEASE = 10
+export const ENVELOPE_DEFAULT_RELEASE = 1
